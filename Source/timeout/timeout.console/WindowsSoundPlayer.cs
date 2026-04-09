@@ -22,6 +22,6 @@ public class WindowsSoundPlayer : ISoundPlayer
         };
 
         var process = Process.Start(psi);
-        process.WaitForExit();
+        process?.WaitForExit();
     }
 }
